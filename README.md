@@ -1,80 +1,77 @@
 ## **Java Calculator Application**
 
 ### **Description**
-This project is a simple console-based calculator application implemented in Java. The application supports various mathematical operations, including basic arithmetic, square root calculation, Fibonacci sequence generation, and statistical calculations (mean and mode of an array).
+A simple console-based calculator application implemented in Java. This program allows users to perform basic arithmetic, advanced mathematical operations, and simple statistical calculations through a menu-driven interface.
 
 ---
 
 ### **Features**
-1. **Basic Arithmetic Operations**:
-   - Sum
-   - Difference
-   - Product
-   - Quotient
 
-2. **Advanced Mathematical Operations**:
-   - Square Root
-   - Fibonacci Sequence Generation
+#### **1. Basic Arithmetic Operations**
+- Sum  
+- Difference  
+- Product  
+- Quotient  
 
-3. **Statistical Operations**:
-   - Mean of an Array
-   - Mode of an Array (using sorting-based calculation)
+#### **2. Advanced Mathematical Operations**
+- Square Root  
+- Fibonacci Sequence Generation  
+
+#### **3. Statistical Operations**
+- Mean of an Array  
+- Mode of an Array (calculated using sorting-based logic)  
 
 ---
 
 ### **How to Use**
-1. **Run the Program**:
-   Compile and execute the `Main.java` file in your Java environment.
 
-2. **Choose an Operation**:
-   When prompted, select an operation from the menu:
-   ```
-   1. Sum
-   2. Difference
-   3. Product
-   4. Quotient
-   5. Square Root
-   6. Fibonacci Sequence
-   7. Mean of an Array
-   8. Mode of an Array
-   ```
+#### **1. Run the Program**
+Compile and run the `Main.java` file in any Java-supported environment or terminal.
 
-3. **Provide Input**:
-   Depending on your choice:
-   - For arithmetic operations, enter two numbers.
-   - For square root, enter a single number.
-   - For Fibonacci sequence, specify the number of terms.
-   - For statistical operations, input the size and elements of the array.
+#### **2. Choose an Operation**
+Upon running, you will be presented with a menu:
+```
+1. Sum
+2. Difference
+3. Product
+4. Quotient
+5. Square Root
+6. Fibonacci Sequence
+7. Mean of an Array
+8. Mode of an Array
+```
 
-4. **View the Result**:
-   The program calculates and displays the result for the selected operation.
+#### **3. Provide Input**
+Depending on your selection:
+- For arithmetic: Enter **two numbers**
+- For square root: Enter **one number**
+- For Fibonacci: Enter the **number of terms**
+- For mean or mode: Enter **array size and elements**
+
+#### **4. View the Output**
+The program processes your input and displays the result accordingly.
 
 ---
 
 ### **Project Files**
-1. **Main.java**:
-   - Manages the user interface and handles operation selection using a menu-driven approach.
-   - Calls appropriate methods from the `Calculator` and `Input` classes based on the user's choice.
 
-2. **Calculator.java**:
-   - Contains all the methods for performing mathematical and statistical operations.
-   - Includes efficient algorithms for mode calculation (using sorting).
-
-3. **Input.java**:
-   - Handles user input for numbers, arrays, or sequence lengths.
-   - Ensures flexibility and reusability of input methods.
+| File         | Description |
+|--------------|-------------|
+| `Main.java`  | Contains the main method and handles user interaction and menu navigation |
+| `Calculator.java` | Performs all calculations – arithmetic, square root, Fibonacci, mean, and mode |
+| `Input.java` | Handles all user input in a clean and reusable manner |
 
 ---
 
-### **Classes and Methods**
+### **Classes and Key Methods**
 
 #### **Main.java**
-- **Purpose**: Provides the main entry point and menu interface.
-- **Key Method**:
-  - `public static void main(String[] args)`: Controls the program flow based on user choice.
+- **Purpose**: Acts as the entry point and UI controller
+- **Main Method**:
+  - `public static void main(String[] args)`: Controls program flow via menu options
 
 #### **Calculator.java**
-- **Purpose**: Performs mathematical and statistical calculations.
+- **Purpose**: Core logic for all calculations
 - **Key Methods**:
   - `int calculateSum(int[] numbers)`
   - `int calculateDifference(int[] numbers)`
@@ -86,50 +83,50 @@ This project is a simple console-based calculator application implemented in Jav
   - `int calculateMode(int[] array)`
 
 #### **Input.java**
-- **Purpose**: Handles user inputs for different operations.
+- **Purpose**: Clean input abstraction from user
 - **Key Methods**:
-  - `int[] inputTwoNumbers()`: Takes two numbers as input.
-  - `int inputSingleNumber()`: Takes a single number as input.
-  - `int[] inputArray()`: Takes an array of numbers as input.
+  - `int[] inputTwoNumbers()`
+  - `int inputSingleNumber()`
+  - `int[] inputArray()`
 
 ---
 
 ### **Example Usage**
 
-#### **Example 1**: Calculate Sum
-- Input:
+#### Example 1: Calculate Sum
+- **Input**:
   ```
   Choose an operation:
-  1. Sum
+  1
   Enter First Number: 10
   Enter Second Number: 20
   ```
-- Output:
+- **Output**:
   ```
   Sum: 30
   ```
 
-#### **Example 2**: Generate Fibonacci Sequence
-- Input:
+#### Example 2: Generate Fibonacci Sequence
+- **Input**:
   ```
   Choose an operation:
-  6. Fibonacci Sequence
+  6
   Enter the number of terms: 5
   ```
-- Output:
+- **Output**:
   ```
   Fibonacci Sequence: 0 1 1 2 3
   ```
 
-#### **Example 3**: Find Mode
-- Input:
+#### Example 3: Find Mode
+- **Input**:
   ```
   Choose an operation:
-  8. Mode of an Array
+  8
   Enter the size of the array: 6
   Enter the elements of the array: 2 3 3 5 2 2
   ```
-- Output:
+- **Output**:
   ```
   Mode: 2
   ```
@@ -137,17 +134,21 @@ This project is a simple console-based calculator application implemented in Jav
 ---
 
 ### **Requirements**
-- **Java Development Kit (JDK)**: Version 8 or higher.
-- **Compiler**: Any Java IDE (e.g., IntelliJ, Eclipse) or a terminal with `javac` and `java` commands.
+- **JDK**: Java 8 or later  
+- **IDE/Tools**: IntelliJ IDEA, Eclipse, NetBeans, or CLI (Command Line Interface with `javac` and `java`)
 
 ---
 
 ### **Compilation and Execution**
-1. Compile the program:
-   ```bash
-   javac Main.java
-   ```
-2. Run the program:
-   ```bash
-   java Main
-   ```
+
+#### **1. Compile**
+```bash
+javac Main.java
+```
+
+> Make sure `Calculator.java` and `Input.java` are in the same directory.
+
+#### **2. Run**
+```bash
+java Main
+```
